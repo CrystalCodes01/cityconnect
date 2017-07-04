@@ -1,0 +1,11 @@
+<h2> Results </h2>
+
+<ul>
+  <% events.forEach((oneEvent)=>{ %>
+    <li>
+      <h3> <%= oneEvent.name %> </h3>
+      <img class="photos" src='<%= oneEvent.photoUrl %>'>
+      <!-- <p> Owner: <i> <%= oneEvent.owner %> </i> </p> -->
+    </li>
+  <% }); %>
+</ul>

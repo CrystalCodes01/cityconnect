@@ -1,0 +1,17 @@
+<h2> Add a event, place, meeting, location</h2>
+
+<form method='post' action='/event'>
+ <label for='event-name-input'> Name </label>
+ <input id='event-name-input' type="text" name="eventName">
+ <br><br>
+
+ <label for='event-description-input'> Description </label>
+ <textarea id='event-description-input' name="eventDescription"></textarea>
+ <br><br>
+
+ <label for='event-photo-url'> Photo (optional) </label>
+ <input id='event-photo-url' type="url" name="eventPhotoUrl">
+ <br><br>
+
+ <button class="btn btn-primary"> Save it! </button>
+</form>
