@@ -18,10 +18,11 @@ router.get('/results', (req, res, next) => {
            // <input name="searchTerm">
   const myTerm = req.query.searchTerm;
   const myZipcode = req.query.zipcode;
-  const myCheckbox1 = req.query.interestTech;
-  const myCheckbox2 = req.query.interestMuseum;
-  const myCheckbox3 = req.query.interestArt;
-  const myCheckbox4 = req.query.interestSocial;
+  // const myCheckbox1 = req.query.interestTech;
+  // const myCheckbox2 = req.query.interestMuseum;
+  // const myCheckbox3 = req.query.interestArt;
+  // const myCheckbox4 = req.query.interestSocial;
+  const myCheckbox = req.query.interestBox;
 
 
   if (myZipcode === '11111') {
@@ -30,7 +31,7 @@ router.get('/results', (req, res, next) => {
     });
   }
 
-  if (myCheckbox1 === 'on') {
+  else if (myCheckbox === 'Tech') {
 
     EventModel.find({ category: 'Tech'}, (err, results) => {
       if(err){
@@ -44,7 +45,7 @@ router.get('/results', (req, res, next) => {
     });
   }
 
-  if (myCheckbox2 === 'on') {
+  else if (myCheckbox === 'Museum') {
 
     EventModel.find({ category: 'Museum'}, (err, results) => {
       if(err){
@@ -58,7 +59,7 @@ router.get('/results', (req, res, next) => {
     });
   }
 
-  if (myCheckbox3 === 'on') {
+  else if (myCheckbox === 'Art') {
 
     EventModel.find({ category: 'Art'}, (err, results) => {
       if(err){
@@ -72,7 +73,7 @@ router.get('/results', (req, res, next) => {
     });
   }
 
-  if (myCheckbox4 === 'on') {
+  else if (myCheckbox === 'Social') {
 
     EventModel.find({ category: 'Social'}, (err, results) => {
       if(err){
@@ -85,11 +86,10 @@ router.get('/results', (req, res, next) => {
       });
     });
   }
-
   else {
-    res.render('error.ejs', {
-    });
+    res.redirect('/search');
   }
+
 });
 
 module.exports = router;
