@@ -14,6 +14,7 @@ require('dotenv').config();
 require('./config/passport-config.js');
 // NAME OF DATABASE cityconnect //
 
+require('mongoose-type-url');
 mongoose.connect(process.env.MONGODB_URI);
 
 // view engine setup
@@ -80,6 +81,9 @@ app.use('/', newEvent);
 
 const explore = require('./routes/explore-route');
 app.use('/', explore);
+
+const search = require('./routes/search-route');
+app.use('/', search);
 
 //////// <- ROUTES END -> //////////
 

@@ -4,14 +4,17 @@ const Schema = mongoose.Schema;
 const myEventSchema = new Schema(
   {
     name: { type: String },
+    address: { type: String },
+    city: { type: String },
+    state: { type: String },
+    zipcode: { type: Number},
     description: { type: String },
+    url: { type: mongoose.SchemaTypes.Url, required: true },
+    category: { type: String },
     creationDate: { type: Date, default: Date.now },
-    geo: { type: [Number], index: '2d' },
+    geo: { type: [ Number ], index: '2d' }, ///LATITUDE LONGITUDE GO HERE
     photoUrl: { type: String, required: false },
 
-
-
-    // hasGhosts: { type: Boolean, default: false },
     // the id of the user who owns the event
     owner: { type: Schema.Types.ObjectId }
   },

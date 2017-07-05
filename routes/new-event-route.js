@@ -14,7 +14,12 @@ router.get('/newEvent', (req,res,next) => {
 router.post('/event', (req,res,next) => {
   const theEvent = new EventModel( {
     name: req.body.eventName,
+    address: req.body.eventAddress,
+    city: req.body.eventCity,
+    state: req.body.eventState,
+    zipcode: req.body.eventZipcode,
     description: req.body.eventDescription,
+    url: req.body.eventUrl,
     creationDate: req.body.eventCreationDate,
     geo: req.body.eventGeo,
     photoUrl: req.body.eventPhotoUrl,
