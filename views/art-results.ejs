@@ -4,8 +4,20 @@
 
 <!-- <p> You searched for <i> <%= theSearch %> </i>. </p> -->
 
-<ol>
-  <!--how do I import from db? -->
-</ol>
-
-<img class="photos" src="/images/art.jpeg">
+<ul>
+  <% events.forEach((oneEvent)=>{ %>
+    <li>
+      <h3> <%= oneEvent.name %> </h3>
+      <img class="photos" src='<%= oneEvent.photoUrl %>'>
+      <p>  <%= oneEvent.name %> </p>
+      <p>  <%= oneEvent.address %>
+           <%= oneEvent.city %>
+           <%= oneEvent.state %>
+           <%= oneEvent.zipcode %>
+     </p>
+      <p> <%= oneEvent.description %> </p>
+      <p> <%= oneEvent.url %> </p>
+      <p> <%= oneEvent.category %> </p>
+    </li>
+  <% }); %>
+</ul>

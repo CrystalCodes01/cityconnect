@@ -20,6 +20,7 @@ router.post('/event', (req,res,next) => {
     zipcode: req.body.eventZipcode,
     description: req.body.eventDescription,
     url: req.body.eventUrl,
+    category: req.body.eventCategory,
     creationDate: req.body.eventCreationDate,
     geo: req.body.eventGeo,
     photoUrl: req.body.eventPhotoUrl,
