@@ -7,7 +7,6 @@
     "reload": "nodemon ./bin/www"
   },
   "dependencies": {
-    "async": "^2.5.0",
     "bcrypt": "^1.0.2",
     "body-parser": "~1.16.0",
     "bootstrap": "^3.3.7",
