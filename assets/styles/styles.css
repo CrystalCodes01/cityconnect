@@ -13,5 +13,5 @@ a {
 }
 
 .center {
-  align-items: center;
+ float: right;
 }
