@@ -1,4 +1,4 @@
-<h2> Add a event, place, meeting, location</h2>
+<h2> Add your event, place, meeting, location</h2>
 
 <br>
 
@@ -8,7 +8,7 @@
         <div class="control-group form-group">
             <div class="controls">
                <label for='event-name-input'> Name </label>
-                 <input id='event-name-input' type="text" name="eventName">
+                 <input id='event-name-input' class="form-control" type="text" name="eventName">
              </div>
          </div>
                    <br>
@@ -17,7 +17,7 @@
          <div class="controls">
            <form method='post' action='/event'>
             <label for='event-address-input'> Address </label>
-              <input id='event-address-input' type="text" name="eventAddress">
+              <input id='event-address-input' class="form-control" type="text" name="eventAddress">
             </div>
         </div>
                 <br>
@@ -26,7 +26,7 @@
         <div class="controls">
           <form method='post' action='/event'>
            <label for='event-city-input'> City </label>
-             <input id='event-city-input' type="text" name="eventCity">
+             <input id='event-city-input' class="form-control" type="text" name="eventCity">
        </div>
   </div>
                <br>
@@ -35,7 +35,7 @@
        <div class="controls">
          <form method='post' action='/event'>
             <label for='event-state-input'> State </label>
-              <input id='event-state-input' type="text" name="eventState">
+              <input id='event-state-input' class="form-control" type="text" name="eventState">
       </div>
   </div>
                 <br>
@@ -44,7 +44,7 @@
       <div class="controls">
         <form method='post' action='/event'>
            <label for='event-zipcode-input'> Zipcode </label>
-             <input id='event-zipcode-input' type="number" name="eventZipcode">
+             <input id='event-zipcode-input' class="form-control" type="number" name="eventZipcode">
     </div>
 </div>
                 <br>
@@ -52,23 +52,23 @@
   <div class="control-group form-group">
       <div class="controls">
          <label for='event-description-input'> Description </label>
-           <textarea id='event-description-input' name="eventDescription"></textarea>
+           <textarea id='event-description-input' class="form-control" name="eventDescription"></textarea>
      </div>
   </div>
                  <br>
 
    <div class="control-group form-group">
        <div class="controls">
-          <label for='event-url-input'> Link to event </label>
-            <input id='event-url-input' type="url" name="eventUrl">
+          <label for='event-url-input'> Link </label>
+            <input id='event-url-input' class="form-control" type="url" name="eventUrl">
       </div>
    </div>
                   <br>
 
   <div class="control-group form-group">
       <div class="controls">
-         <label for='event-category-input'> Category </label>
-           <input id='event-category-input' type="text" name="eventCategory">
+         <label for='event-category-input'> Category (Tech, Art, Social) </label>
+           <input id='event-category-input' class="form-control" type="text" name="eventCategory">
      </div>
   </div>
                  <br>
@@ -76,7 +76,7 @@
  <div class="control-group form-group">
      <div class="controls">
        <label for='event-photo-url'> Photo (optional) </label>
-         <input id='event-photo-url' type="url" name="eventPhotoUrl">
+         <input id='event-photo-url' class="form-control" type="url" name="eventPhotoUrl">
      </div>
 </div>
                 <br>

@@ -86,6 +86,21 @@ router.get('/results', (req, res, next) => {
       });
     });
   }
+
+  else if (myCheckbox === 'Fitness') {
+
+    EventModel.find({ category: 'Fitness'}, (err, results) => {
+      if(err){
+        next(err);
+        return;
+      }
+      res.render('fitness-results.ejs', {
+        theSearch: myTerm,
+        events: results
+      });
+    });
+  }
+
   else {
     res.redirect('/search');
   }
