@@ -8,13 +8,17 @@ a {
 }
 
 .photos {
-  width: 300px;
+  width: 400px;
   height: 200px;
 }
 
-.center {
-}
-
-.link {
-  
+.height {
+  height: 450px;
+  padding: 10px 15px;
+  border-radius: 2px;
+  margin: 10px 6%;
+  max-width: 400px;
+  vertical-align: middle;
+  border: 2px solid #d6d6d6;
+  display: block;
 }
