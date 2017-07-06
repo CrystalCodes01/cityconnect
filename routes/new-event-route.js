@@ -26,8 +26,7 @@ router.post('/event', (req,res,next) => {
     photoUrl: req.body.eventPhotoUrl,
 
 
-    // hasGhosts: Math.floor(Math.random()*2),
-    // hasMonstersUnderTheBed: Math.floor(Math.random()*2),
+    // has(use to randomize if needed): Math.floor(Math.random()*2),
     // Set the owner as the logged-in user's database id
     owner: req.user._id,
   });

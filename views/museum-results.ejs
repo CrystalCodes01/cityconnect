@@ -1,6 +1,6 @@
 <h2> Museum Results </h2>
 
-<p> Your results for <b> Museum </b> search:</p>
+<p> Your results for <b>Museums</b>:</p>
 
 <!-- <p> You searched for <i> <%= theSearch %> </i>. </p> -->
 
@@ -9,15 +9,17 @@
     <li>
       <h3> <%= oneEvent.name %> </h3>
       <img class="photos" src='<%= oneEvent.photoUrl %>'>
+      <br><br>
       <p>  <%= oneEvent.name %> </p>
       <p>  <%= oneEvent.address %>
            <%= oneEvent.city %>
            <%= oneEvent.state %>
            <%= oneEvent.zipcode %>
      </p>
-      <p> <%= oneEvent.description %> </p>
-      <p> <%= oneEvent.url %> </p>
-      <p> <%= oneEvent.category %> </p>
+     <p> <%= oneEvent.description %> </p>
+     <a href="<%= oneEvent.url %>"><%= oneEvent.url %></a>
+     <br><br>
+     <p> Category: <%= oneEvent.category %> </p>
     </li>
   <% }); %>
 </ul>

@@ -16,8 +16,9 @@
            <%= oneEvent.zipcode %>
      </p>
       <p> <%= oneEvent.description %> </p>
-      <p> <%= oneEvent.url %> </p>
-      <p> <%= oneEvent.category %> </p>
+      <a href="<%= oneEvent.url %>"><%= oneEvent.url %></a>
+      <br><br>
+      <p> Category: <%= oneEvent.category %> </p>
     </li>
   <% }); %>
 </ul>
