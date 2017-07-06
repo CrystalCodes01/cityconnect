@@ -101,6 +101,20 @@ router.get('/results', (req, res, next) => {
     });
   }
 
+  else if (myCheckbox === 'Volunteering') {
+
+    EventModel.find({ category: 'Volunteering'}, (err, results) => {
+      if(err){
+        next(err);
+        return;
+      }
+      res.render('volunteer-results.ejs', {
+        theSearch: myTerm,
+        events: results
+      });
+    });
+  }
+
   else {
     res.redirect('/search');
   }
