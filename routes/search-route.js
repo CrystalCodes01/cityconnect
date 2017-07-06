@@ -18,16 +18,19 @@ router.get('/results', (req, res, next) => {
            // <input name="searchTerm">
   const myTerm = req.query.searchTerm;
   const myZipcode = req.query.zipcode;
-  // const myCheckbox1 = req.query.interestTech;
-  // const myCheckbox2 = req.query.interestMuseum;
-  // const myCheckbox3 = req.query.interestArt;
-  // const myCheckbox4 = req.query.interestSocial;
   const myCheckbox = req.query.interestBox;
 
 
-  if (myZipcode === '11111') {
+  if (myZipcode === 33140) {
+    EventModel.find({ zipcode: 33140}, (err, results) => {
+      if(err){
+        next(err);
+        return;
+      }
     res.render('zip-results.ejs', {
-      theSearch: myTerm
+      theSearch: myTerm,
+      events: results
+      });
     });
   }
 
