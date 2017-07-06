@@ -48,8 +48,7 @@ router.get('/explore', (req,res,next) => {
     return;
   }
   EventModel.find(
-    // find the rooms owned by the logged-in user
-    { owner: req.user._id},
+    {},
     (err, eventResults) => {
       if(err) {
         next(err);

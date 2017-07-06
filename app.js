@@ -79,8 +79,8 @@ app.use('/', contact);
 const newEvent = require('./routes/new-event-route');
 app.use('/', newEvent);
 
-const explore = require('./routes/explore-route');
-app.use('/', explore);
+// const explore = require('./routes/explore-route');
+// app.use('/', explore);
 
 const search = require('./routes/search-route');
 app.use('/', search);
