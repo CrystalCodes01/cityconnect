@@ -28,9 +28,33 @@ a {
 }
 
 .index {
-  font-size: 20px;
-  font-style: Lucida;
-  font-weight: 100;
+  font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+}
+
+.index2 {
+  font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+  font-size: 18px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.header {
+  font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+  font-weight: 500;
+  font-size: 70px;
+}
+
+.header2 {
+    font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+    font-weight: 500;
+    font-size: 40px;
 }
 
 .blue {
@@ -38,9 +62,10 @@ a {
 }
 
 .about {
-  font-size: 18px;
-  font-style: monospace;
+  font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+  font-weight: 500;
   font-weight: 100;
+  font-size: 20px;
 }
 
 .zip {
