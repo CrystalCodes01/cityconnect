@@ -2,11 +2,20 @@ body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-color: #ffffff;
-  background-image: url("https://www.transparenttextures.com/patterns/light-wool.png");
+  background-image: url("https://www.transparenttextures.com/patterns/subtle-grey.png");
 }
 
 a {
   color: #00B7FF;
+}
+
+.foot {
+  background-color: white;
+  text-align: center;
+  width: 100%;
+  height: 70px;
+  padding-top: 20px;
+  padding-bottom: 70px;
 }
 
 .photos {
@@ -14,15 +23,20 @@ a {
   height: 200px;
 }
 
+.photos2 {
+  height: 514px;
+}
+
 .height {
   height: 600px;
   padding: 10px 15px;
   border-radius: 2px;
-  margin: 10px 6%;
+  margin: 10px 8%;
   max-width: 400px;
   vertical-align: middle;
   border: 2px solid #d6d6d6;
   display: block;
+  background-color: white;
 }
 
 .center {
@@ -52,6 +66,16 @@ a {
   font-variant: normal;
   font-weight: 500;
   line-height: 20px;
+}
+
+.index3 {
+  font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+  padding: 10px;
 }
 
 .header {
@@ -110,8 +134,7 @@ a {
 
 .add-text {
   font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
-  font-weight: 500;
-  font-weight: 100;
+  font-weight: 600;
   font-size: 20px;
 }
 
@@ -141,10 +164,6 @@ a {
   padding: 0;
   border: none;
   background: none;
-}
-
-.foot {
-  text-align: center;
 }
 
 .zip {
