@@ -59,6 +59,15 @@ a {
     font-size: 40px;
 }
 
+.features-info-text {
+  background-color: rgba(51, 122, 183, 0.1);
+  padding-bottom: 22px;
+}
+
+.features-border {
+  border: 1px solid #cecece;
+  border-radius: 3px;
+}
 
 .box-container {
   width:400px;
