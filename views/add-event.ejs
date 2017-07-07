@@ -1,85 +1,55 @@
-<h2 class="header2"> Add your event, place, meeting, or location to City Connect </h2>
-<hr>
+<h2 class="header2 add"> Add your event, place, meeting, or location to City Connect </h2>
+<hr class="hr-style">
 <br>
 
-<div class="row">
-    <div class="col-md-8">
-      <form method='post' action='/event'>
-        <div class="control-group form-group">
-            <div class="controls">
-               <label for='event-name-input'> Name </label>
-                 <input id='event-name-input' class="form-control" type="text" name="eventName">
-             </div>
-         </div>
+<div class="container form-width">
+  <form method='post' action='/event'>
+    <label class='add-text' for='event-name-input'> Name: </label>
+        <input id='event-name-input' class="form-control" type="text" name="eventName">
+                    <br>
+
+ <form method='post' action='/event'>
+    <label class='add-text' for='event-address-input'> Address: </label>
+      <input id='event-address-input' class="form-control" type="text" name="eventAddress">
+                    <br>
+
+  <form method='post' action='/event'>
+         <label class='add-text' for='event-city-input'> City: </label>
+           <input id='event-city-input' class="form-control" type="text" name="eventCity">
+                    <br>
+
+ <form method='post' action='/event'>
+    <label class='add-text' for='event-state-input'> State: </label>
+        <input id='event-state-input' class="form-control" type="text" name="eventState">
+                    <br>
+
+  <form method='post' action='/event'>
+     <label class='add-text' for='event-zipcode-input'> Zipcode: </label>
+       <input id='event-zipcode-input' class="form-control" type="number" name="eventZipcode">
+                    <br>
+
+<form method='post' action='/event'>
+   <label class='add-text' for='event-description-input'> Description: </label>
+      <textarea id='event-description-input' class="form-control" name="eventDescription"></textarea>
                    <br>
 
-     <div class="control-group form-group">
-         <div class="controls">
-           <form method='post' action='/event'>
-            <label for='event-address-input'> Address </label>
-              <input id='event-address-input' class="form-control" type="text" name="eventAddress">
-            </div>
-        </div>
-                <br>
+  <form method='post' action='/event'>
+    <label class='add-text' for='event-url-input'> Link: </label>
+        <input id='event-url-input' class="form-control" type="url" name="eventUrl">
+                    <br>
 
-    <div class="control-group form-group">
-        <div class="controls">
-          <form method='post' action='/event'>
-           <label for='event-city-input'> City </label>
-             <input id='event-city-input' class="form-control" type="text" name="eventCity">
-       </div>
-  </div>
-               <br>
+  <form method='post' action='/event'>
+    <label class='add-text' for='event-category-input'> Category: (Tech, Art, Social) </label>
+      <input id='event-category-input' class="form-control" type="text" name="eventCategory">
+                     <br>
 
-   <div class="control-group form-group">
-       <div class="controls">
-         <form method='post' action='/event'>
-            <label for='event-state-input'> State </label>
-              <input id='event-state-input' class="form-control" type="text" name="eventState">
+<form method='post' action='/event'>
+   <label class='add-text' for='event-photo-url'> Photo: (optional) </label>
+      <input id='event-photo-url' class="form-control" type="url" name="eventPhotoUrl">
+                    <br><br>
+        <div class="center">
+         <button class="btn btn-primary btn-lg center"> Save it! </button>
       </div>
-  </div>
-                <br>
-
-  <div class="control-group form-group">
-      <div class="controls">
-        <form method='post' action='/event'>
-           <label for='event-zipcode-input'> Zipcode </label>
-             <input id='event-zipcode-input' class="form-control" type="number" name="eventZipcode">
-    </div>
+  </form>
 </div>
-                <br>
-
-  <div class="control-group form-group">
-      <div class="controls">
-         <label for='event-description-input'> Description </label>
-           <textarea id='event-description-input' class="form-control" name="eventDescription"></textarea>
-     </div>
-  </div>
-                 <br>
-
-   <div class="control-group form-group">
-       <div class="controls">
-          <label for='event-url-input'> Link </label>
-            <input id='event-url-input' class="form-control" type="url" name="eventUrl">
-      </div>
-   </div>
-                  <br>
-
-  <div class="control-group form-group">
-      <div class="controls">
-         <label for='event-category-input'> Category (Tech, Art, Social) </label>
-           <input id='event-category-input' class="form-control" type="text" name="eventCategory">
-     </div>
-  </div>
-                 <br>
-
- <div class="control-group form-group">
-     <div class="controls">
-       <label for='event-photo-url'> Photo (optional) </label>
-         <input id='event-photo-url' class="form-control" type="url" name="eventPhotoUrl">
-     </div>
-</div>
-                <br>
-
-     <button class="btn btn-primary"> Save it! </button>
-</form>
+<hr class="hr-style">

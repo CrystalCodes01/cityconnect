@@ -15,7 +15,7 @@ a {
 }
 
 .height {
-  height: 650px;
+  height: 600px;
   padding: 10px 15px;
   border-radius: 2px;
   margin: 10px 6%;
@@ -26,7 +26,14 @@ a {
 }
 
 .center {
- text-align: center;
+  width: 200px;
+  text-align:center;
+  margin: auto;
+}
+
+.center2 {
+  text-align:center;
+  margin: auto;
 }
 
 .index {
@@ -51,12 +58,20 @@ a {
   font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
   font-weight: 500;
   font-size: 70px;
+  text-align:center;
+  margin:auto;
+  /*width: 500px;*/
 }
+
 
 .header2 {
   font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
   font-weight: 500;
   font-size: 40px;
+}
+
+.add {
+  text-align: center;
 }
 
 .features-info-text {
@@ -89,8 +104,24 @@ a {
   width: 30%;
 }
 
+.form-width {
+  width: 60%;
+}
+
+.add-text {
+  font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+  font-weight: 500;
+  font-weight: 100;
+  font-size: 20px;
+}
+
 .event-info {
   font-size: 18px;
+}
+
+.hr-style {
+  border: 1px solid;
+  border-color: #337ab7;
 }
 
 .event-cat {
@@ -101,9 +132,15 @@ a {
 }
 
 .search {
-  font-size: 26px;
+  font-size: 22px;
   margin-bottom: 20px;
   margin-right: 100px;
+}
+
+.btn-border {
+  padding: 0;
+  border: none;
+  background: none;
 }
 
 .foot {

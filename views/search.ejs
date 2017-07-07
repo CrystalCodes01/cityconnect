@@ -1,50 +1,52 @@
-<h2> Search City Connect </h2>
-  <br>
-<p> Lets get started! Enter your zipcode or interest and let us take it from there!</p>
-  <hr>
-
-
-<form method="get" action="/zipresults"> <!--zip res -->
-  <div class="well well2">
-    <div class="input-group">
-      <label class="search" for="search-zipcode-input"> Search by Zipcode </label>
-        <input class="zip" id="search-zipcode-input" type="text" name="zipcode">
-          <span class="input-group-btn">
-          </span>
+<br>
+  <h1 class="header"> Search City Connect </h1>
+      <hr class="hr-style">
+    <p class="index"> Lets get started! Enter your zipcode or select an interest, we will take it from there!</p>
+        <br>
+    <form method="get" action="/zipresults"> <!--zip res -->
+      <div class="well well2">
+        <div class="input-group">
+          <label class="search" for="search-zipcode-input"> Search by Zipcode </label>
+            <input class="zip" id="search-zipcode-input" type="text" name="zipcode">
+              <span class="input-group-btn">
+              </span>
+          </div>
+          <!-- /.input-group -->
       </div>
-      <!-- /.input-group -->
-  </div>
-</form>
+    </form>
 
-  <hr>
-  <p class="index"> Or select one of these categories to get started:  </p>
-  <hr>
+      <hr>
 
-<form method="get" action="/results">
-  <input  id="interest-box" type="radio" name="interestBox" value="Museum">
-  <label for="interest-box"> Interested in Museums? </label>
-  <br><br>
+      <p class="index blue"> Or select one of these categories to get started: </p>
 
-  <input  id="interest-box2" type="radio" name="interestBox" value="Tech">
-  <label for="interest-box2"> Interested in Tech? </label>
-  <br><br>
+      <hr>
 
-  <input  id="interest-box3" type="radio" name="interestBox" value="Art">
-  <label for="interest-box3"> Interested in Art? </label>
-  <br><br>
+    <form method="get" action="/results">
+      <input  id="interest-box" type="radio" name="interestBox" value="Museum">
+      <label for="interest-box"> Interested in Museums? </label>
+      <br><br>
 
-  <input  id="interest-box4" type="radio" name="interestBox" value="Social">
-  <label for="interest-box4"> Interested in Social events? </label>
-  <br><br>
+      <input  id="interest-box2" type="radio" name="interestBox" value="Tech">
+      <label for="interest-box2"> Interested in Tech? </label>
+      <br><br>
 
-  <input  id="interest-box5" type="radio" name="interestBox" value="Fitness">
-  <label for="interest-box5"> Interested in Fitness? </label>
-  <br><br>
+      <input  id="interest-box3" type="radio" name="interestBox" value="Art">
+      <label for="interest-box3"> Interested in Art? </label>
+      <br><br>
 
-  <input  id="interest-box5" type="radio" name="interestBox" value="Volunteering">
-  <label for="interest-box5"> Interested in Volunteering? </label>
-  <br><br>
+      <input  id="interest-box4" type="radio" name="interestBox" value="Social">
+      <label for="interest-box4"> Interested in Social events? </label>
+      <br><br>
 
-  <button class="btn btn-primary"> Lets go! </button>
+      <input  id="interest-box5" type="radio" name="interestBox" value="Fitness">
+      <label for="interest-box5"> Interested in Fitness? </label>
+      <br><br>
 
-</form>
+      <input  id="interest-box5" type="radio" name="interestBox" value="Volunteering">
+      <label for="interest-box5"> Interested in Volunteering? </label>
+      <br><br><br>
+
+      <button class="btn btn-primary btn-lg center"> Lets go! </button>
+
+    </form>
+  <hr class="hr-style">
