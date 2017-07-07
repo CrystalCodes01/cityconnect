@@ -85,6 +85,9 @@ app.use('/', newEvent);
 const search = require('./routes/search-route');
 app.use('/', search);
 
+const ziproute = require('./routes/zip-route');
+app.use('/', ziproute);
+
 //////// <- ROUTES END -> //////////
 
 // catch 404 and forward to error handler

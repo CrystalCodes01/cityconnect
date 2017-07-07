@@ -17,24 +17,10 @@ router.get('/results', (req, res, next) => {
 
            // <input name="searchTerm">
   const myTerm = req.query.searchTerm;
-  const myZipcode = req.query.zipcode;
   const myCheckbox = req.query.interestBox;
 
 
-  if (myZipcode === 33140) {
-    EventModel.find({ zipcode: 33140}, (err, results) => {
-      if(err){
-        next(err);
-        return;
-      }
-    res.render('zip-results.ejs', {
-      theSearch: myTerm,
-      events: results
-      });
-    });
-  }
-
-  else if (myCheckbox === 'Tech') {
+  if (myCheckbox === 'Tech') {
 
     EventModel.find({ category: 'Tech'}, (err, results) => {
       if(err){

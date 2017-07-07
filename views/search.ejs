@@ -1,12 +1,19 @@
 <h2> Search City Connect </h2>
   <br>
 <p> Lets get started! Enter your zipcode or interest and let us take it from there!</p>
-  <br>
+  <hr>
 
-<form method="get" action="/results">
 
-  <label for="search-zipcode-input"> Search by Zipcode </label>
-  <input class="zip" id="search-zipcode-input" type="number" name="zipcode">
+<form method="get" action="/zipresults"> <!--zip res -->
+  <div class="well well2">
+    <div class="input-group">
+      <label class="search" for="search-zipcode-input"> Search by Zipcode </label>
+        <input class="zip" id="search-zipcode-input" type="text" name="zipcode">
+          <span class="input-group-btn">
+          </span>
+      </div>
+      <!-- /.input-group -->
+  </div>
 </form>
 
   <hr>
