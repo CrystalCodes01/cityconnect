@@ -54,9 +54,9 @@ a {
 }
 
 .header2 {
-    font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
-    font-weight: 500;
-    font-size: 40px;
+  font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+  font-weight: 500;
+  font-size: 40px;
 }
 
 .features-info-text {
@@ -104,6 +104,10 @@ a {
   font-size: 26px;
   margin-bottom: 20px;
   margin-right: 100px;
+}
+
+.foot {
+  text-align: center;
 }
 
 .zip {
