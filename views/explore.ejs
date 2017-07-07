@@ -18,16 +18,19 @@
                   <img class="img-responsive img-hover photos" src='<%= oneEvent.photoUrl %>'>
                 </a>
                     <h3> <%= oneEvent.name %> </h3>
-                    <br>
-                    <p>  <%= oneEvent.address %>
+                    <hr>
+                    <p class="event-info">
+                         <%= oneEvent.address %>
                          <%= oneEvent.city %>
                          <%= oneEvent.state %>
                          <%= oneEvent.zipcode %>
                    </p>
+                   <hr>
+                   <p> About: </p>
                    <p> <%= oneEvent.description %> </p>
                    <a href="<%= oneEvent.url %>"><%= oneEvent.url %></a>
-                   <br><br>
-                   <p> Category: <%= oneEvent.category %> </p>
+                   <hr>
+                   <p class="event-cat"> Category: <%= oneEvent.category %> </p>
                  </div>
                    <% }); %>
             </div>
